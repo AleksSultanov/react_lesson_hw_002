@@ -1,0 +1,29 @@
+.parthers-section {
+    &__title {
+      font-size: 52px;
+      line-height: 62px;
+      padding: 10px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__brands {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    &__brands-img {
+        margin-right: 74px;
+        &__last{
+            margin-right: 0px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+      }
+  }
