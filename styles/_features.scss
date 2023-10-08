@@ -1,5 +1,15 @@
 .features-section {
   padding-top: 162px;
+  padding-bottom: 62px;
+
+  @include lg-max {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include sm-max {
+    padding: 0 10px 92px 10px;
+  }
 
   &__title {
     text-transform: uppercase;
@@ -9,17 +19,46 @@
   &__subtitle {
     margin-bottom: 80px;
     text-align: center;
+
+    @include lg-max {
+      margin-bottom: 28px;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   &__content {
     display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @include xl-max {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__images {
     position: relative;
-    width: 752px;
+    width: 100%;
+    max-width: 752px;
     height: 760px;
     margin-right: 46px;
+
+    @include xl-max {
+      margin-right: 0;
+      height: 460px;
+    }
+
+    @include md-max {
+      padding-left: 62px;
+      padding-right: 62px;
+      height: 380px;
+    }
   }
 
   &__panel-image {
@@ -28,6 +67,20 @@
     top: 0;
     width: 696px;
     height: 659px;
+
+    @include xl-max {
+      width: 400px;
+      height: auto;
+
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
+
+    @include md-max {
+      width: 324px;
+      height: 320px;
+    }
   }
 
   &__graphic-image {
@@ -36,12 +89,29 @@
     bottom: 0;
     width: 400px;
     height: 276px;
+
+    @include xl-max {
+      width: 232px;
+      height: 160px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
+
+    @include md-max {
+    }
   }
 
   &__list {
     width: 100%;
     max-width: 270px;
     padding-top: 74px;
+
+    @include xl-max {
+      padding-top: 62px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     &-title {
       margin-bottom: 20px;

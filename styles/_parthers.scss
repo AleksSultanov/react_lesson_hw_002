@@ -1,4 +1,12 @@
 .parthers-section {
+    @include lg-max {
+        padding: 50px 20px;
+    }    
+    &__caption {
+        width: 74%;
+        margin-left: 12%;
+
+    }        
     &__title {
       font-size: 52px;
       line-height: 62px;
@@ -11,15 +19,33 @@
     }
 
     &__brands {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(60px,auto));
+        grid-gap: 74px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
         margin-top: 50px;
         margin-bottom: 50px;
+        @include lg-max {
+            grid-template-columns: repeat(3, minmax(60px,auto));
+            grid-gap: 50px;   
+        }    
     }
     &__brands-img {
-        margin-right: 74px;
-        &__last{
-            margin-right: 0px;
-        }
+        max-height: 60px;
+        max-width: 60px;
     }
+    &__brands-img-l {
+        max-height: 60px;
+        max-width: 150px;
+        @include lg-max {
+            max-height: 34px;
+            max-width: 82px;
+            }    
+    }
+
 
     &__links {
         display: flex;
