@@ -480,6 +480,7 @@
   display: flex;
   justify-content: center;
   padding: 80px 0px;
+  width: 100%;
 }
 .content-section__div {
   display: flex;
@@ -488,11 +489,25 @@
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 991px) {
+  .content-section__div {
+    background-color: #1E1E1E;
+    flex-direction: column;
+    border-radius: 0;
+    width: 100%;
+  }
+}
 .content-section__div-left-content {
   display: flex;
   flex-direction: column;
   padding: 18px 94px;
   margin-right: 86px;
+}
+@media screen and (max-width: 991px) {
+  .content-section__div-left-content {
+    margin-right: 0;
+    padding: 104px 64px;
+  }
 }
 .content-section__title {
   font-size: 52px;
@@ -500,9 +515,29 @@
   white-space: nowrap;
   margin-bottom: 38px;
 }
+@media screen and (max-width: 991px) {
+  .content-section__title {
+    white-space: normal;
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
 .content-section__links {
   display: flex;
   justify-content: flex-start;
+}
+@media screen and (max-width: 991px) {
+  .content-section__links {
+    justify-content: center;
+  }
+}
+.content-section__div-media-content img {
+  max-width: 586px;
+}
+@media screen and (max-width: 991px) {
+  .content-section__div-media-content img {
+    max-width: 346px;
+  }
 }
 
 .footer-section {
@@ -513,10 +548,22 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1199px) {
+  .footer-section__div-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer-section__div-content__links {
   display: flex;
   flex-direction: row;
   margin-right: 200px;
+}
+@media screen and (max-width: 991px) {
+  .footer-section__div-content__links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .footer-section__div-content__links__col:nth-last-child(n+2) {
   margin-right: 76px;
@@ -531,6 +578,20 @@
   font-size: 16px;
   line-height: 24px;
   text-align: left;
+}
+@media screen and (max-width: 991px) {
+  .footer-section__div-content__links__col__list li {
+    margin-bottom: 18px;
+  }
+}
+.footer-section__div-content__links__col__list li:nth-last-child(1) {
+  margin-bottom: 76px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-section__div-content__links {
+    align-content: center;
+    margin-right: 0;
+  }
 }
 .footer-section__div-content__info {
   display: flex;

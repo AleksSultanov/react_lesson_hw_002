@@ -4,12 +4,21 @@
     &__div-content {
         display: flex;
         justify-content: center; 
+        @include xl-max {
+            flex-direction: column;
+            align-items: center;
+        }    
         &__links {
             display: flex;
             flex-direction:row;
+            @include lg-max {
+                flex-direction: column;
+                align-items: flex-start;
+            }    
             &__col{
                 &:nth-last-child(n+2) {
                     margin-right: 76px;
+        
                 }
                 &__title{
                     font-size: 20px;
@@ -21,10 +30,22 @@
                     font-size: 16px;
                     line-height: 24px;
                     text-align: left;
+                    @include lg-max {
+                        margin-bottom: 18px;
+                    }    
+                    &:nth-last-child(1) {
+                        margin-bottom: 76px;
+                    }
+    
                 }
 
             }
             margin-right: 200px;
+            @include xl-max {
+                align-content: center;
+                margin-right: 0;
+            }    
+
         }
 
         &__info {
