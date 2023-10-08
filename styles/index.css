@@ -422,6 +422,11 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 991px) {
+  .testimonials-section__cards {
+    flex-direction: column;
+  }
+}
 .testimonials-section__cards-colum {
   display: flex;
   align-items: center;
@@ -429,6 +434,12 @@
 }
 .testimonials-section__cards-colum + .testimonials-section__cards-colum {
   margin-left: 24px;
+}
+@media screen and (max-width: 991px) {
+  .testimonials-section__cards-colum + .testimonials-section__cards-colum {
+    margin-left: 0;
+    margin-top: 24px;
+  }
 }
 .testimonials-section__cards-cell {
   display: flex;

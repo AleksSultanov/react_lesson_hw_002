@@ -10,6 +10,9 @@
     &__cards {
         display: flex;
         justify-content: center;
+        @include lg-max {
+            flex-direction: column;
+        }    
     }    
     &__cards-colum {
         display: flex;
@@ -19,6 +22,11 @@
     }
     &__cards-colum + &__cards-colum {
         margin-left: 24px;
+        @include lg-max {
+            margin-left: 0;
+            margin-top: 24px;
+        }    
+
     }
     &__cards-cell {
         display: flex;
