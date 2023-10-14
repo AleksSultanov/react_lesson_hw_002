@@ -6,8 +6,16 @@
         justify-content: center; 
         @include xl-max {
             flex-direction: column;
-            align-items: center;
+            align-items:center;
         }    
+        &-body {
+            display: flex;
+            flex-direction:row;
+            @include lg-max {
+                flex-direction: column;
+                align-items: flex-start;
+            }    
+        }   
         &__links {
             display: flex;
             flex-direction:row;
@@ -20,20 +28,35 @@
                     margin-right: 76px;
         
                 }
-                &__title{
+                &-title{
                     font-size: 20px;
                     line-height: 30px;
                     margin-bottom: 40px;
                     text-align: left;
                 }
-                &__list li{
+                // &-list li{
+                //     font-size: 16px;
+                //     line-height: 24px;
+                //     text-align: left;
+                //     @include lg-max {
+                //         margin-bottom: 18px;
+                //     }    
+                //     &:nth-last-child(1) {
+                //         margin-bottom: 76px;
+                //     }
+    
+                // }
+
+                .footer-links_item{
+                    
                     font-size: 16px;
                     line-height: 24px;
                     text-align: left;
+                    display: flex;
                     @include lg-max {
                         margin-bottom: 18px;
                     }    
-                    &:nth-last-child(1) {
+                    :nth-last-child(1) {
                         margin-bottom: 76px;
                     }
     
