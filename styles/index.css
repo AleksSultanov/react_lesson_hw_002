@@ -128,6 +128,41 @@
     display: none;
   }
 }
+.header__mobile-icon, .header__close-icon {
+  display: none;
+}
+.header__mobile-icon.visible, .header__close-icon.visible {
+  display: block;
+}
+.header .mobile-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 122px;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  z-index: 1;
+  background-color: white;
+}
+.header .mobile-menu.visible {
+  display: block;
+}
+.header .mobile-menu__list {
+  margin-bottom: 60px;
+}
+.header .mobile-menu__link {
+  display: block;
+  padding: 10px 0;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.header .mobile-menu__login-button {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  border-color: #000;
+}
 
 .features-section {
   padding-top: 162px;
@@ -649,6 +684,9 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: var(--bg-color);
   color: #fff;
+}
+body.hidden {
+  overflow-y: hidden;
 }
 
 ul {
