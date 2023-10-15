@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашнее задание Султанов А, копия макета с figma</title>
+    <title>Домашнее задание Султанов А, мобильное меню на копии макета с figma</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
@@ -33,15 +33,42 @@
           </button>
           <button class="header__mobile-button">
             <img
-              class="header__mobile-icon"
+              class="header__mobile-icon visible"
               src="./images/mobile-menu-icon.svg"
               alt="Иконка мобильного меню"
             />
+            <img
+              class="header__close-icon"
+              src="./images/close-icon.svg"
+              alt="Закрытие мобильного меню"
+            />
           </button>
+            <!-- тут начинается практическое задание -->
+            <div class="header_mobile-menu mobile-menu">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Home</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Product</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">About</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Contact</a>
+                </li>
+              </ul>
+              <button class="mobile-menu__login-button button button--small">
+                Login
+              </button>
+            </div>  
         </div>
-      </div>
+     </div>
     </header>
-    <!-- тут начинается практическое задание -->
+
+
+
     <main>
       <section class="parthers-section">
         <div class="parthers-section__caption">
@@ -260,6 +287,6 @@
         </div>
       </section>
     </footer>
-
   </body>
+  <script type="text/javascript" src="./script.js"></script>
 </html>
