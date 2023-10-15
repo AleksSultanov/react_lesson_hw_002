@@ -6,4 +6,4 @@ https://www.figma.com/file/EuXPyRXJSvw1wGxPZfQuwn/Figma-Land-(Copy)?node-id=62%3
 
 
 Страница результата 
-https://alekssultanov.github.io/AleksSultanov-react_lesson_hw_03/
+https://alekssultanov.github.io/react_lesson_hw_002/
