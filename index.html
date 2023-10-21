@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашнее задание Султанов А, копия макета с figma</title>
+    <title>Домашнее задание Султанов А, мобильное меню на копии макета с figma</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
@@ -33,15 +33,42 @@
           </button>
           <button class="header__mobile-button">
             <img
-              class="header__mobile-icon"
+              class="header__mobile-icon visible"
               src="./images/mobile-menu-icon.svg"
               alt="Иконка мобильного меню"
             />
+            <img
+              class="header__close-icon"
+              src="./images/close-icon.svg"
+              alt="Закрытие мобильного меню"
+            />
           </button>
+            <!-- тут начинается практическое задание -->
+            <div class="header_mobile-menu mobile-menu">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Home</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Product</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">About</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Contact</a>
+                </li>
+              </ul>
+              <button class="mobile-menu__login-button button button--small">
+                Login
+              </button>
+            </div>  
         </div>
-      </div>
+     </div>
     </header>
-    <!-- тут начинается практическое задание -->
+
+
+
     <main>
       <section class="parthers-section">
         <div class="parthers-section__caption">
@@ -197,66 +224,69 @@
     <footer>
       <section class="footer-section">
         <div class="footer-section__div-content">
-          <ul class="footer-section__div-content__links">
-            <li class="footer-section__div-content__links__col">
-              <div class="footer-section__div-content__links__col__title">
-                Fingertipe
-              </div>
-                <ul class="footer-section__div-content__links__col__list">      
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Examples</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Updates</a></li>
-                </ul>    
-            </li>
-            <li class="footer-section__div-content__links__col">
-              <div class="footer-section__div-content__links__col__title">
-                Resources
-              </div>
-                <ul class="footer-section__div-content__links__col__list">      
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Examples</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Updates</a></li>
-                </ul>  
-            </li>
-            <li class="footer-section__div-content__links__col">
-              <div class="footer-section__div-content__links__col__title">
-                About
-              </div>
-                <ul class="footer-section__div-content__links__col__list">      
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Examples</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Updates</a></li>
-                </ul>   
-            </li>
-          </ul>
+            <div class="footer-section__div-content-body">
+            <ul class="footer-section__div-content__links">
+              <li class="footer-section__div-content__links__col">
+                <div class="footer-section__div-content__links__col-title">
+                  Fingertipe
+                </div>
+                  <ul class="footer-section__div-content__links__col-list"> 
 
-          <div class="footer-section__div-content__info">
-            <div class="footer-section__div-content__info__adress">
-              <img class="footer-section__div-content__info__adress__img1" src="./images/point.svg" alt="Адрес" />
-              <span class="footer-section__div-content__info__adress__txt">7480 Mockingbird Hill undefined</span>
+                    <li><a href="#" class="footer-links_item">Home</a></li>
+                    <li><a href="#" class="footer-links_item">Examples</a></li>
+                    <li><a href="#" class="footer-links_item">Pricing</a></li>
+                    <li><a href="#" class="footer-links_item">Updates</a></li>
+                  </ul>    
+              </li>
+              <li class="footer-section__div-content__links__col">
+                <div class="footer-section__div-content__links__col-title">
+                  Resources
+                </div>
+                  <ul class="footer-section__div-content__links__col-list">      
+                    <li><a href="#" class="footer-links_item">Home</a></li>
+                    <li><a href="#" class="footer-links_item">Examples</a></li>
+                    <li><a href="#" class="footer-links_item">Pricing</a></li>
+                    <li><a href="#" class="footer-links_item">Updates</a></li>
+                  </ul>  
+              </li>
+              <li class="footer-section__div-content__links__col">
+                <div class="footer-section__div-content__links__col-title">
+                  About
+                </div>
+                  <ul class="footer-section__div-content__links__col-list">      
+                    <li><a href="#" class="footer-links_item">Home</a></li>
+                    <li><a href="#" class="footer-links_item">Examples</a></li>
+                    <li><a href="#" class="footer-links_item">Pricing</a></li>
+                    <li><a href="#" class="footer-links_item">Updates</a></li>
+                  </ul>   
+              </li>
+            </ul>
+
+            <div class="footer-section__div-content__info">
+              <div class="footer-section__div-content__info__adress">
+                <img class="footer-section__div-content__info__adress__img1" src="./images/point.svg" alt="Адрес" />
+                <span class="footer-section__div-content__info__adress__txt">7480 Mockingbird Hill undefined</span>
+              </div>
+              <div class="footer-section__div-content__info__adress">
+                <img class="footer-section__div-content__info__adress__img2" src="./images/phone.svg" alt="Телефон" />
+                <span class="footer-section__div-content__info__adress__txt">(239) 555-0108</span>
+              </div>
+              <ul class="footer-section__div-content__info__links">      
+                  <li>
+                    <img class="footer-section__div-content__info__links__img" src="./images/twitter.svg" alt="Twitter" />
+                  </li>
+                  <li>
+                    <img class="footer-section__div-content__info__links__img" src="./images/facebook.svg" alt="Facebook" />
+                  </li>
+                  <li>
+                    <img class="footer-section__div-content__info-links__img" src="./images/linkedin.svg" alt="Linkedin" />
+                  </li>
+                </ul>  
             </div>
-            <div class="footer-section__div-content__info__adress">
-              <img class="footer-section__div-content__info__adress__img2" src="./images/phone.svg" alt="Телефон" />
-              <span class="footer-section__div-content__info__adress__txt">(239) 555-0108</span>
-            </div>
-            <ul class="footer-section__div-content__info__links">      
-                <li>
-                  <img class="footer-section__div-content__info__links__img" src="./images/twitter.svg" alt="Twitter" />
-                </li>
-                <li>
-                  <img class="footer-section__div-content__info__links__img" src="./images/facebook.svg" alt="Facebook" />
-                </li>
-                <li>
-                  <img class="footer-section__div-content__info-links__img" src="./images/linkedin.svg" alt="Linkedin" />
-                </li>
-              </ul>  
           </div>
         </div>
       </section>
     </footer>
-
   </body>
+  <script type="text/javascript" src="./script.js"></script>
 </html>

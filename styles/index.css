@@ -128,6 +128,41 @@
     display: none;
   }
 }
+.header__mobile-icon, .header__close-icon {
+  display: none;
+}
+.header__mobile-icon.visible, .header__close-icon.visible {
+  display: block;
+}
+.header .mobile-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 122px;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  z-index: 1;
+  background-color: white;
+}
+.header .mobile-menu.visible {
+  display: block;
+}
+.header .mobile-menu__list {
+  margin-bottom: 60px;
+}
+.header .mobile-menu__link {
+  display: block;
+  padding: 10px 0;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.header .mobile-menu__login-button {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  border-color: #000;
+}
 
 .features-section {
   padding-top: 162px;
@@ -531,11 +566,16 @@
     justify-content: center;
   }
 }
-.content-section__div-media-content img {
+.content-section__media {
+  width: 100%;
+  height: 100%;
   max-width: 586px;
+  min-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 991px) {
-  .content-section__div-media-content img {
+  .content-section__media {
     max-width: 346px;
   }
 }
@@ -554,6 +594,16 @@
     align-items: center;
   }
 }
+.footer-section__div-content-body {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 991px) {
+  .footer-section__div-content-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .footer-section__div-content__links {
   display: flex;
   flex-direction: row;
@@ -568,23 +618,24 @@
 .footer-section__div-content__links__col:nth-last-child(n+2) {
   margin-right: 76px;
 }
-.footer-section__div-content__links__col__title {
+.footer-section__div-content__links__col-title {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 40px;
   text-align: left;
 }
-.footer-section__div-content__links__col__list li {
+.footer-section__div-content__links__col .footer-links_item {
   font-size: 16px;
   line-height: 24px;
   text-align: left;
+  display: flex;
 }
 @media screen and (max-width: 991px) {
-  .footer-section__div-content__links__col__list li {
+  .footer-section__div-content__links__col .footer-links_item {
     margin-bottom: 18px;
   }
 }
-.footer-section__div-content__links__col__list li:nth-last-child(1) {
+.footer-section__div-content__links__col .footer-links_item :nth-last-child(1) {
   margin-bottom: 76px;
 }
 @media screen and (max-width: 1199px) {
@@ -638,6 +689,9 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: var(--bg-color);
   color: #fff;
+}
+body.hidden {
+  overflow-y: hidden;
 }
 
 ul {
