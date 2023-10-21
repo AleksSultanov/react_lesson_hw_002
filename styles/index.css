@@ -566,11 +566,16 @@
     justify-content: center;
   }
 }
-.content-section__div-media-content img {
+.content-section__media {
+  width: 100%;
+  height: 100%;
   max-width: 586px;
+  min-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 991px) {
-  .content-section__div-media-content img {
+  .content-section__media {
     max-width: 346px;
   }
 }

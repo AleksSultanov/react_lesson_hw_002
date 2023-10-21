@@ -10,6 +10,7 @@
         border-radius: 33px 33px; 
         align-items:center;
         justify-content:space-between;
+        
         @include lg-max {
             background-color: #1E1E1E;
             flex-direction: column;
@@ -23,6 +24,7 @@
         flex-direction: column;
         padding: 18px 94px;
         margin-right: 86px;
+
         @include lg-max {
             margin-right: 0;
             padding: 104px 64px;
@@ -35,6 +37,7 @@
         line-height: 62px;
         white-space:nowrap;
         margin-bottom: 38px;
+
         @include lg-max {
             white-space: normal;
             font-size: 42px;
@@ -46,14 +49,20 @@
     &__links {
         display: flex;
         justify-content:flex-start;
+
         @include lg-max {
             justify-content:center;
         }    
     }
-    &__div-media-content img {
-        max-width: 586px;
-        @include lg-max {
-            max-width: 346px;
+    &__media{
+            width: 100%;
+            height: 100%;
+            max-width: 586px;
+            min-width: 300px;
+            object-fit: cover;
+
+            @include lg-max {
+                max-width: 346px;
         } 
     }       
 
